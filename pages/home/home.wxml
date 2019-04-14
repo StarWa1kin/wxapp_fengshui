@@ -1,0 +1,64 @@
+<!-- 首页封面 -->
+<view class="section-cover">
+  <image src="../../images/home.jpg"></image>
+</view>
+
+<!-- 热门专题 -->
+<view class='section-hot'>
+  <view class='topic'>热门专题</view>
+  <view class='hotBox'>
+    <view class='item1'></view>
+    <view class='item2 item'></view>
+  </view>
+  <view class='hotBox'>
+    <view class='item3 item'></view>
+    <view class='item4 item'></view>
+    <view class='item5 item'></view>
+  </view>
+</view>
+
+<!-- 今日时间 -->
+<view class='todayTime'>
+  <view class='lunar'>
+    <view class='timeIcon'></view>
+    <view class='lunar-time'>
+      <text class='timeFont timeColor'>阴历 </text>
+      <text class='timeFont tiemBlod'>2016年5月30日</text>
+    </view>
+  </view>
+  <view class='solar'>
+    <view class='solar-time'>
+      <text class='timeFont timeColor'>阳历 </text>
+      <text class='timeFont tiemBlod'>2016年5月30日</text>
+    </view>
+  </view>
+</view>
+
+<!-- 表单填写 -->
+<view class='section-form'>
+  <view class='form-item'>
+    <view class='label'>您的名字:</view>
+    <view class='input'>
+      <input bindinput="bindKeyInput" value='{{yourName}}' maxlength="6" placeholder="请输入您的姓氏及名字" />
+    </view>
+  </view>
+  <view class='form-item'>
+    <view class='label'>出生日期:</view>
+    <picker mode="date" value="{{date}}" start="1919-01-01" end="2100-12-31" bindchange="bindDateChange">
+      <view class='date value1'>{{timeArr[0]}}</view>
+      <view class='date'>年</view>
+      <view class='date value'>{{timeArr[1]}}</view>
+      <view class='date'>月</view>
+      <view class='date value'>{{timeArr[2]}}</view>
+      <view class='date'>日</view>
+    </picker>
+    <picker value="{{index}}" range="{{dayHours}}" bindchange="bindHourPicker">
+      <view class='date value'>{{dayHours[index]}}</view>
+      <view class='date'>时</view>
+    </picker>
+  </view>
+</view>
+
+<view class='btnBox'>
+  <view class='btn' bindtap='draw'>我要抽签</view>
+</view>

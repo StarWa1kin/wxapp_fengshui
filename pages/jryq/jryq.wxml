@@ -1,0 +1,38 @@
+<view class="section-cover">
+  <image src='../../images/jryq.jpg'></image>
+</view>
+
+
+
+
+<!-- 表单填写 -->
+<view class='section-form'>
+  <view class='form-item'>
+    <view class='label'>您的名字:</view>
+    <view class='input'>
+      <input bindinput="bindKeyInput" value='{{yourName}}' maxlength="6" placeholder="请输入您的姓氏及名字" />
+    </view>
+  </view>
+  <view class='form-item'>
+    <view class='label'>出生日期:</view>
+    <picker mode="date" value="{{date}}" start="1919-01-01" end="2100-12-31" bindchange="bindDateChange">
+      <view class='date value1'>{{timeArr[0]}}</view>
+      <view class='date'>年</view>
+      <view class='date value'>{{timeArr[1]}}</view>
+      <view class='date'>月</view>
+      <view class='date value'>{{timeArr[2]}}</view>
+      <view class='date'>日</view>
+    </picker>
+    <picker value="{{index}}" range="{{dayHours}}" bindchange="bindHourPicker">
+      <view class='date value'>{{dayHours[index]}}</view>
+      <view class='date'>时</view>
+    </picker>
+  </view>
+</view>
+
+
+<view class='blank'></view>
+
+<view class='btnBox'>
+  <view class='btn' bindtap='draw'>我要抽签</view>
+</view>

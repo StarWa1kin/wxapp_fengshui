@@ -1,0 +1,26 @@
+<view class='section-cover'>
+  <image src='../../images/gcdg.jpg'></image>
+</view>
+
+<!-- 热门专题  -->
+<view class="section-hot">
+  <view class="topic">热门专题</view>
+  <view class="hot-item">
+    <view class='imgBox'></view>
+    <view class='detailBox'></view>
+  </view>
+  <view class="hot-item">
+    <view class='imgBox'></view>
+    <view class='detailBox'></view>
+  </view>
+  <view class="hot-item">
+    <view class='imgBox'></view>
+    <view class='detailBox'></view>
+  </view>
+</view>
+
+<!-- 归藏道馆 -->
+<view class="seciton-more">
+  <view class="topic">归藏道馆</view>
+  <view class='introduce'></view>
+</view>

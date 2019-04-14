@@ -1,0 +1,74 @@
+<view class="tips">温馨提示:请站在客厅正中央获取方向</view>
+
+
+<view class='section'>
+  <view class='deg'>{{direction}}{{angle}}°</view>
+  <view class='compass'>
+    <view class='imgBox'>
+      <image src='../../images/compass.jpg' style="transform: rotate({{rotate}}deg)"></image>
+    </view>
+  </view>
+  <view class='location'>
+    <view class='icon' bindtap='getLocation'>
+      <image src='../../images/loc.png'></image>
+    </view>
+    <view class='loaction-txt' wx:if="{{coordinate==null}}">请点击 进行定位</view>
+    <view wx:else class='loaction-txt'>精度:{{coordinate.longitude[0]}}°{{coordinate.longitude[1]}}′ 纬度:{{coordinate.latitude[0]}}°{{coordinate.latitude[1]}}′ 海拔:{{coordinate.altitude}}米</view>
+    <view class='locked' bindtap='lockCompass'>{{isLocked?"接除锁定":"锁定"}}</view>
+  </view>
+</view>
+
+
+
+<!-- 表单填写 -->
+<view class='section-form'>
+
+  <view class='form-item'>
+    <view class='label'>您的名字:</view>
+    <view class='input'>
+      <input bindinput="bindKeyInput" value='{{yourName}}' maxlength="6" placeholder="请输入您的姓氏及名字" />
+    </view>
+  </view>
+
+  <view class='form-item'>
+    <view class='label'>出生日期:</view>
+    <picker mode="date" value="{{date}}" start="1919-01-01" end="2100-12-31" bindchange="bindDateChange">
+      <view class='date value1'>{{timeArr[0]}}</view>
+      <view class='date'>年</view>
+      <view class='date value'>{{timeArr[1]}}</view>
+      <view class='date'>月</view>
+      <view class='date value'>{{timeArr[2]}}</view>
+      <view class='date'>日</view>
+    </picker>
+    <picker value="{{index}}" range="{{dayHours}}" bindchange="bindHourPicker">
+      <view class='date value'>{{dayHours[index]}}</view>
+      <view class='date'>时</view>
+    </picker>
+  </view>
+
+  <view class='form-item'>
+    <view class='label'>卧室朝向:</view>
+    <picker value="{{bedroom}}" range="{{orientation}}" bindchange="bindRoomPicker">
+      <!-- <view wx:if="{{bedroom=='true'}}">请选择</view> -->
+      <view class='morelong'>{{orientation[bedroom]}}</view>
+    </picker>
+  </view>
+
+  <view class='form-item'>
+    <view class='label'>大门朝向:</view>
+    <picker value="{{door}}" range="{{orientation}}" bindchange="bindDoorPicker">
+      <view class='morelong'>{{orientation[door]}}</view>
+    </picker>
+  </view>
+
+  <view class='form-item'>
+    <view class='label'>灶台朝向:</view>
+    <picker value="{{hearth}}" range="{{orientation}}" bindchange="bindHearthPicker">
+      <view class='morelong'>{{orientation[hearth]}}</view>
+    </picker>
+  </view>
+</view>
+
+<view class='btnBox'>
+  <view class='btn' bindtap='draw'>测算风水</view>
+</view>

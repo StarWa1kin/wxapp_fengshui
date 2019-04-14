@@ -1,0 +1,151 @@
+/* pages/home/home.wxss */
+.section-cover{
+  height: 1110rpx;
+  background: silver
+}
+.section-cover>image{
+  width: 100%;
+  height: 100%;
+}
+.topic {
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-left: 30rpx;
+  font-weight: bold;
+}
+
+.hotBox {
+  display: flex;
+}
+
+.item {
+  width: 230rpx;
+  height: 280rpx;
+  background: silver;
+}
+
+.item1 {
+  width: 470rpx;
+  height: 280rpx;
+  background: silver;
+  margin: 0 10rpx 10rpx 30rpx;
+}
+
+.item2 {
+  margin: 0 30rpx 0 0;
+}
+
+.item3 {
+  margin-left: 30rpx;
+}
+
+.item4 {
+  margin: 0 10rpx;
+}
+
+.item5 {
+  margin-right: 30rpx;
+}
+
+.todayTime {
+  height: 200rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.timeIcon {
+  width: 75rpx;
+  height: 75rpx;
+  background: silver;
+}
+
+.lunar {
+  width: 345rpx;
+  margin-left: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lunar-time {
+  height: 60rpx;
+  padding-right: 10rpx;
+  border-right: 1rpx solid #c0c0c0;
+}
+
+.solar {
+  width: 345rpx;
+  margin-right: 30rpx;
+  display: flex;
+  align-items: center;
+}
+
+.solar-time {
+  height: 60rpx;
+  padding-left: 20rpx;
+}
+
+.todayTime>view {
+  height: 100rpx;
+}
+
+.timeFont {
+  font-size: 27rpx;
+}
+
+.tiemBlod {
+  font-weight: bold;
+}
+
+.timeColor {
+  color: #939393;
+  font-style: italic;
+  font-weight: bold;
+}
+
+
+/* form */
+.form-item {
+  margin: 0 30rpx;
+  height: 100rpx;
+  border-bottom: 1rpx solid #c0c0c0;
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  font-size: 30rpx;
+  font-weight: bold;
+  margin: 0 20rpx;
+}
+
+.pickerDate {
+  display: flex;
+}
+
+.date {
+  display: inline-block;
+}
+
+.value {
+  width: 60rpx;
+  text-align: center;
+}
+
+.btnBox {
+  height: 200rpx;
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin: 0 30rpx;
+  border-radius: 6rpx;
+  text-align: center;
+  background: #938463;
+  color: white;
+}
