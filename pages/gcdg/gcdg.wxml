@@ -6,21 +6,90 @@
 <view class="section-hot">
   <view class="topic">热门专题</view>
   <view class="hot-item">
-    <view class='imgBox'></view>
-    <view class='detailBox'></view>
+    <view class='imgBox'>
+      <image src='../../images/gcdg_item1.png'></image>
+    </view>
+    <view class='detailBox'>
+      <view class='txtBox blod'>今日一签</view>
+      <view class='txtBox'>
+        <view class='detailTxt'>故事：山中宰相之典故其实应该是</view>
+        <view class='detailTxt'>六朝『陶弘景』，他是茅山派袓师。</view>
+      </view>
+    </view>
   </view>
   <view class="hot-item">
-    <view class='imgBox'></view>
-    <view class='detailBox'></view>
-  </view>
-  <view class="hot-item">
-    <view class='imgBox'></view>
-    <view class='detailBox'></view>
+    <view class='imgBox'>
+      <image src='../../images/gcdg_item2.png'></image>
+    </view>
+    <view class='detailBox'>
+      <view class='txtBox blod'>风水</view>
+      <view class='txtBox'>
+        <view class='detailTxt'>故事：山中宰相之典故其实应该是</view>
+        <view class='detailTxt'>六朝『陶弘景』，他是茅山派袓师。</view>
+      </view>
+    </view>
   </view>
 </view>
 
 <!-- 归藏道馆 -->
 <view class="seciton-more">
   <view class="topic">归藏道馆</view>
-  <view class='introduce'></view>
+  <view class='introduce'>
+    <view style='margin-top:40rpx;'>于渊归藏 文化伶播公司 致力于将传统国学易学与现实相结</view>
+    <view>合发扬传统文化 发掘伶统国学精髓</view>
+    <view>本公司将晦涩难惮的易学知识与现代现象相结合 使这门古</view>
+    <view>老的学问焕发活力</view>
+    <view>归藏道馆 是本公司旗下的一间易学道馆 馆长 归藏山人 系</view>
+    <view>江夏易学嫡系第七代传人 流传有序 目前馆方开设有 以</view>
+    <view>下业务</view>
+  </view>
+</view>
+
+<!-- 业务 -->
+<view class='section-business'>
+  <view class='singel'>《选吉日吉时》</view>
+  <view class='double'>《丧葬服务》</view>
+  <view class='singel'>《公司及个人起名》</view>
+  <view class='double'>《阳宅风水企业风水》</view>
+  <view class='singel'>《阴宅风水》</view>
+  <view class='double'>《四柱命理测算》</view>
+</view>
+
+<!-- 二维码 -->
+<view class='seciton-QRcode'>
+  <view class='QRcode-box'>
+    <image src='../../images/QRcode.png'></image>
+  </view>
+  <view class='info'>
+    <view class='pos'>
+      <view class='leanMore'>了解更多</view>
+      <view class='little'>扫描加二维码</view>
+    </view>
+  </view>
+</view>
+
+<!-- 更多业务  -->
+<view class='section-moreBusiness'>
+  <view class="topic">更多业务</view>
+  <view class='moreItem'>
+    <view class='item-header'>本道馆开设企业课程</view>
+    <view class='itemMore'>
+      <view class='singel'>《风水软装布置》</view>
+      <view class='double'>《风水与室内布局》</view>
+      <view class='singel'>《面相与人格-快速营销》</view>
+      <view class='double'>《易经与企业管理》</view>
+    </view>
+  </view>
+
+
+  <view class='moreItem'>
+    <view class='item-header'>本道馆开设私人课程</view>
+    <view class='itemMore'>
+      <view class='singel'>《江夏金锁玉关风水》</view>
+      <view class='double'>《梅花相学》</view>
+      <view class='singel'>《四柱快断》</view>
+      <view class='double'>《更多课程可定制》</view>
+    </view>
+  </view>
+  
 </view>

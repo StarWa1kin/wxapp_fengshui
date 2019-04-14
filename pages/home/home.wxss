@@ -1,12 +1,16 @@
 /* pages/home/home.wxss */
-.section-cover{
+
+.section-cover {
+  width: 100%;
   height: 1110rpx;
-  background: silver
+  background: silver;
 }
-.section-cover>image{
+
+.section-cover>image {
   width: 100%;
   height: 100%;
 }
+
 .topic {
   height: 80rpx;
   line-height: 80rpx;
@@ -29,6 +33,16 @@
   height: 280rpx;
   background: silver;
   margin: 0 10rpx 10rpx 30rpx;
+}
+
+.item1>image {
+  width: 100%;
+  height: 100%;
+}
+
+.item image {
+  width: 100%;
+  height: 100%;
 }
 
 .item2 {
@@ -55,9 +69,13 @@
 }
 
 .timeIcon {
-  width: 75rpx;
-  height: 75rpx;
-  background: silver;
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.timeIcon>image {
+  width: 100%;
+  height: 100%;
 }
 
 .lunar {
@@ -104,8 +122,8 @@
   font-weight: bold;
 }
 
-
 /* form */
+
 .form-item {
   margin: 0 30rpx;
   height: 100rpx;

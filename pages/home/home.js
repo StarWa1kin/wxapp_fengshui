@@ -1,5 +1,7 @@
 // pages/home/home.js
-import { global } from '../../utils/globalFunc.js'
+import {
+  global
+} from '../../utils/globalFunc.js'
 Page({
 
   /**
@@ -88,6 +90,21 @@ Page({
   //   })
 
   // },
+  toToday(){
+    wx.switchTab({
+      url: '../jryq/jryq',
+    })
+  },
+  toWater() {
+    wx.switchTab({
+      url: '../fs/fs',
+    })
+  },
+  toDao() {
+    wx.switchTab({
+      url: '../gcdg/gcdg',
+    })
+  },
   bindKeyInput(e) {
     this.setData({
       yourName: e.detail.value

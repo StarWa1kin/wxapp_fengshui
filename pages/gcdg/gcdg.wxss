@@ -1,27 +1,26 @@
 /* pages/gcdg/gcdg.wxss */
-.section-cover{
-  /* width: 100%; */
+
+.section-cover {
   height: 950rpx;
   padding: 20rpx 20rpx;
 }
-.section-cover>image{
+
+.section-cover>image {
   width: 100%;
   height: 100%;
 }
 
 .topic {
-  width: 100%;
-  height: 80rpx;
-  line-height: 80rpx;
-  padding-left: 20rpx;
-  box-sizing: border-box;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin-left: 20rpx;
   font-weight: bold;
+  border-bottom: 1rpx solid #c0c0c0;
 }
 
 .hot-item {
   width: 100%;
   height: 200rpx;
-  /* background: red; */
   border-bottom: 1px solid #c0c0c0;
   display: flex;
   align-items: center;
@@ -30,7 +29,6 @@
 
 .hot-item>view {
   height: 160rpx;
-  background: black;
   margin: 0 20rpx;
 }
 
@@ -38,12 +36,130 @@
   width: 35%;
 }
 
+.imgBox>image {
+  width: 100%;
+  height: 100%;
+}
+
 .detailBox {
   width: 55%;
 }
 
-.introduce{
+.txtBox {
+  height: 50%;
+}
+
+.blod {
+  font-weight: bold;
+}
+
+.detailTxt {
+  font-size: 24rpx;
+}
+
+.introduce {
   width: 100%;
-  height: 380rpx;
-  background:#c0c0c0
+  height: 300rpx;
+  font-size: 27rpx;
+  font-weight: bold;
+  color: #5b5b5b;
+}
+
+.introduce>view {
+  padding: 0 20rpx;
+}
+
+/* 业务  */
+
+.section-business {
+  width: 100%;
+  height: 480rpx;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+}
+
+.section-business>view {
+  width: 350rpx;
+  height: 130rpx;
+  line-height: 130rpx;
+  text-align: center;
+  background: #938463;
+  border-radius: 8rpx;
+  color: white;
+  font-size: 30rpx;
+}
+
+.singel {
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+}
+
+.double {
+  margin-right: 20rpx;
+  margin-top: 10rpx;
+}
+
+/* 二维码 */
+
+.seciton-QRcode {
+  display: flex;
+  height: 300rpx;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.QRcode-box {
+  width: 240rpx;
+  height: 240rpx;
+  background: silver;
+}
+
+.QRcode-box>image {
+  width: 100%;
+  height: 100%;
+}
+
+.info {
+  width: 440rpx;
+  height: 240rpx;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.leanMore {
+  font-size: 42rpx;
+}
+
+.little {
+  font-size: 24rpx;
+}
+
+
+/* 更多业务  */
+.itemMore{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+  height: 320rpx;
+}
+.item-header{
+  height: 100rpx;
+  line-height: 100rpx;
+  padding-left: 20rpx;
+  font-size: 32rpx;
+  font-weight: bold
+}
+.itemMore>view{
+  width: 350rpx;
+  height: 130rpx;
+  line-height: 130rpx;
+  text-align: center;
+  background: #938463;
+  border-radius: 8rpx;
+  color: white;
+  font-size: 30rpx;
 }

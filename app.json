@@ -14,22 +14,33 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
+    "color":"#000000",
+    "backgroundColor":"#e4e4e4",
+    "selectedColor":"#938463",
     "list": [
       {
         "pagePath": "pages/home/home",
-        "text": "首页"
+        "text": "首页",
+        "iconPath":"./images/tabbar/home.png",
+        "selectedIconPath":"./images/tabbar/home_selected.png"
       },
       {
         "pagePath": "pages/jryq/jryq",
-        "text": "今日一签"
+        "text": "今日一签",
+        "iconPath": "./images/tabbar/jryq.png",
+        "selectedIconPath": "./images/tabbar/jryq_selected.png"
       },
       {
         "pagePath": "pages/fs/fs",
-        "text": "风水"
+        "text": "风水",
+        "iconPath": "./images/tabbar/fs.png",
+        "selectedIconPath": "./images/tabbar/fs_selected.png"
       },
       {
         "pagePath": "pages/gcdg/gcdg",
-        "text": "归藏道馆"
+        "text": "归藏道馆",
+        "iconPath": "./images/tabbar/gcgd.png",
+        "selectedIconPath": "./images/tabbar/gcgd_selected.png"
       }
     ]
   },

@@ -1,26 +1,38 @@
 <!-- 首页封面 -->
 <view class="section-cover">
-  <image src="../../images/home.jpg"></image>
+  <image src="../../images/banner.png"></image>
 </view>
 
 <!-- 热门专题 -->
 <view class='section-hot'>
   <view class='topic'>热门专题</view>
   <view class='hotBox'>
-    <view class='item1'></view>
-    <view class='item2 item'></view>
+    <view class='item1'>
+      <image src='../../images/hot1.png'></image>
+    </view>
+    <view class='item2 item'>
+      <image src='../../images/hot2.png'></image>
+    </view>
   </view>
   <view class='hotBox'>
-    <view class='item3 item'></view>
-    <view class='item4 item'></view>
-    <view class='item5 item'></view>
+    <view class='item3 item'bindtap='toToday'>
+      <image src='../../images/hot3.png'></image>
+    </view>
+    <view class='item4 item' bindtap='toWater'>
+      <image src='../../images/hot4.png'></image>
+    </view>
+    <view class='item5 item' bindtap='toDao'>
+      <image src='../../images/hot5.png'></image>
+    </view>
   </view>
 </view>
 
 <!-- 今日时间 -->
 <view class='todayTime'>
   <view class='lunar'>
-    <view class='timeIcon'></view>
+    <view class='timeIcon'>
+      <image src="../../images/jrsj.png"></image>
+    </view>
     <view class='lunar-time'>
       <text class='timeFont timeColor'>阴历 </text>
       <text class='timeFont tiemBlod'>2016年5月30日</text>
