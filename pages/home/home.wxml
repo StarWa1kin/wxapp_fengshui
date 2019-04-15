@@ -1,6 +1,12 @@
 <!-- 首页封面 -->
 <view class="section-cover">
   <image src="../../images/banner.png"></image>
+  <view class='search' bindtap='toToday'>
+    <view class="fdj">
+      <image src='../../images/fdj.png'></image>
+    </view>
+    <view class='inputTxt'>今日一签</view>
+  </view>
 </view>
 
 <!-- 热门专题 -->

@@ -62,5 +62,16 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  again(){
+
+  },
+  shareFriends(){
+    wx.updateShareMenu({
+      withShareTicket: true,
+      success() {
+        debugger
+       }
+    })
   }
 })

@@ -4,13 +4,42 @@
   width: 100%;
   height: 1110rpx;
   background: silver;
+  position: relative
 }
 
 .section-cover>image {
   width: 100%;
   height: 100%;
+  position: absolute;
 }
-
+.search{
+  width: 320rpx;
+  height: 60rpx;
+  background: white;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-160rpx);
+  border-radius: 60rpx;
+  display: flex;
+  align-items: center;
+  padding-left: 20rpx;
+}
+.fdj{
+  height: 50rpx;
+  width: 50rpx;
+}
+.fdj>image{
+  width: 100%;
+  height: 100%;
+}
+.inputTxt{
+  height: 50rpx;
+  line-height: 50rpx;
+  margin-left: 10rpx;
+  padding-left: 10rpx;
+  border-left: 1rpx solid #c0c0c0;
+}
 .topic {
   height: 80rpx;
   line-height: 80rpx;
