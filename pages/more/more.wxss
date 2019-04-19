@@ -1,0 +1,42 @@
+/* pages/more/more.wxss */
+
+/* pages/result/result.wxss */
+
+.imgRes {
+  margin: 0 30rpx;
+  height: 1000rpx;
+  background: silver;
+}
+
+.imgRes>image {
+  width: 100%;
+  height: 100%;
+}
+
+.font {
+  font-size: 28rpx;
+}
+
+.share {
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background: #938463;
+  border-radius: 50rpx;
+  text-align: center;
+  width: 320rpx;
+  margin: 30rpx 0;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: white;
+  font-size: 32rpx;
+}
+
+.backBtn {
+  background: #a32f2f !important;
+}

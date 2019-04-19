@@ -16,12 +16,12 @@
     <view class='item1'>
       <image src='../../images/hot1.png'></image>
     </view>
-    <view class='item2 item'>
+    <view class='item2 item' bindtap='toMore'>
       <image src='../../images/hot2.png'></image>
     </view>
   </view>
   <view class='hotBox'>
-    <view class='item3 item'bindtap='toToday'>
+    <view class='item3 item' bindtap='toToday'>
       <image src='../../images/hot3.png'></image>
     </view>
     <view class='item4 item' bindtap='toWater'>

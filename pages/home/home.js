@@ -1,7 +1,11 @@
 // pages/home/home.js
+var amapFile = require('../../utils/amap-wx.js'); //天气sdk
 import {
   global
-} from '../../utils/globalFunc.js'
+} from '../../utils/globalFunc.js';
+import {
+  http
+} from '../../utils/http.js';
 Page({
 
   /**
@@ -21,6 +25,20 @@ Page({
    */
   onLoad: function(options) {
     global.setNowtime(this)
+    var myAmapFun = new amapFile.AMapWX({
+      key: "250dc38fdc0310dca6b35e83c7fec9d7"
+    });
+    debugger
+    myAmapFun.getWeather({
+      success: function(data) {
+        //成功回调
+        debugger
+      },
+      fail: function(info) {
+        //失败回调
+        console.log(info)
+      }
+    })
 
   },
 
@@ -90,7 +108,12 @@ Page({
   //   })
 
   // },
-  toToday(){
+  toMore() {
+    wx.navigateTo({
+      url: '../more/more',
+    })
+  },
+  toToday() {
     wx.switchTab({
       url: '../jryq/jryq',
     })

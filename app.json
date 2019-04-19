@@ -3,9 +3,9 @@
     "pages/home/home",
     "pages/fs/fs",
     "pages/jryq/jryq",
-    "pages/calendar/calendar",
     "pages/gcdg/gcdg",
-    "pages/result/result"
+    "pages/result/result",
+    "pages/more/more"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -14,15 +14,15 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "color":"#000000",
-    "backgroundColor":"#e4e4e4",
-    "selectedColor":"#938463",
+    "color": "#000000",
+    "backgroundColor": "#e4e4e4",
+    "selectedColor": "#938463",
     "list": [
       {
         "pagePath": "pages/home/home",
         "text": "首页",
-        "iconPath":"./images/tabbar/home.png",
-        "selectedIconPath":"./images/tabbar/home_selected.png"
+        "iconPath": "./images/tabbar/home.png",
+        "selectedIconPath": "./images/tabbar/home_selected.png"
       },
       {
         "pagePath": "pages/jryq/jryq",
