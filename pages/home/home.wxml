@@ -1,6 +1,6 @@
 <!-- 首页封面 -->
 <view class="section-cover">
-  <image src="../../images/banner.png"></image>
+  <image src="{{banner}}"></image>
   <view class='search' bindtap='toToday'>
     <view class="fdj">
       <image src='../../images/fdj.png'></image>
@@ -41,13 +41,13 @@
     </view>
     <view class='lunar-time'>
       <text class='timeFont timeColor'>阴历 </text>
-      <text class='timeFont tiemBlod'>2016年5月30日</text>
+      <text class='timeFont tiemBlod'>{{yinyang.yin}}</text>
     </view>
   </view>
   <view class='solar'>
     <view class='solar-time'>
       <text class='timeFont timeColor'>阳历 </text>
-      <text class='timeFont tiemBlod'>2016年5月30日</text>
+      <text class='timeFont tiemBlod'>{{yinyang.yang}}</text>
     </view>
   </view>
 </view>

@@ -25,15 +25,19 @@ const sendRequest = (config) => {
       method: _config.method,
       data: _config.data,
       success(res) {
-        // if(){}
-        resolve(res.data)
+        // debugger
+        if (res.data.result == "0000") {
+          resolve(res.data.data)
+        }
+
       },
       fail(err) {
+        debugger
         errMsg(err);
         reject(err);
       },
       complete(result) {
-
+        wx.hideLoading();
       }
     })
   })
@@ -50,6 +54,7 @@ const errMsg = (msg) => {
 }
 
 
-export{
-  sendRequest as http
+export {
+  sendRequest as http,
+  baseUrl
 }

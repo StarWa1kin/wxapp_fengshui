@@ -1,10 +1,9 @@
 // pages/home/home.js
-var amapFile = require('../../utils/amap-wx.js'); //天气sdk
 import {
   global
 } from '../../utils/globalFunc.js';
 import {
-  http
+  http,baseUrl
 } from '../../utils/http.js';
 Page({
 
@@ -12,6 +11,8 @@ Page({
    * 页面的初始数据
    */
   data: {
+    banner: baseUrl +'/attachment/banner',
+    yinyang:{},
     nowTime: '', //to show
     yourName: '', //to submit
     date: '', //picker to submit
@@ -24,22 +25,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    global.setNowtime(this)
-    var myAmapFun = new amapFile.AMapWX({
-      key: "250dc38fdc0310dca6b35e83c7fec9d7"
-    });
-    debugger
-    myAmapFun.getWeather({
-      success: function(data) {
-        //成功回调
-        debugger
-      },
-      fail: function(info) {
-        //失败回调
-        console.log(info)
-      }
-    })
-
+    global.setNowtime(this);
+    this.getTime();
   },
 
   /**
@@ -108,6 +95,17 @@ Page({
   //   })
 
   // },
+  getTime(){
+    http({
+      apiName:'/api/setNumber',
+      method:'post',
+    })
+    .then(res=>{
+      this.setData({
+        yinyang:res
+      })
+    })
+  },
   toMore() {
     wx.navigateTo({
       url: '../more/more',
@@ -158,7 +156,7 @@ Page({
       let yourName = this.data.yourName.replace(/\s+/g, ""); //去除所有空格
       let yourDate = this.data.date;
       let yourHour = this.data.dayHours[this.data.index];
-      debugger
+      // debugger
       wx.navigateTo({
         url: '../result/result',
       })

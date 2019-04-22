@@ -1,0 +1,18 @@
+<!--pages/fs-result/fs-result.wxml-->
+<view class='imgRes'>
+  <image src='../../images/fs_result.png'></image>
+  <view class='title'>{{fsRes.yzeryao}}</view>
+  <view class='title-fu'>{{fsRes.yzsanyao}}</view>
+  <view class='content'>{{fsRes.miaoshu}}</view>
+  <view class='fenshu'>{{fsRes.fenshu}}</view>
+  <view class='jixiong'>{{fsRes.xiongji}}</view>
+</view>
+
+
+
+<view class='share'>
+  <view>
+    <view class='btn' bindtap='again'>再算一卦</view>
+    <view class='btn backBtn' bindtap='shareFriends'>分享给好友</view>
+  </view>
+</view>

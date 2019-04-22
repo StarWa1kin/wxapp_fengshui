@@ -1,7 +1,6 @@
-// pages/more/more.js
+// pages/fs-result/fs-result.js
 import {
-  http,
-  baseUrl
+  http
 } from '../../utils/http.js'
 Page({
 
@@ -9,13 +8,18 @@ Page({
    * 页面的初始数据
    */
   data: {
-    more: baseUrl + '/attachment/more'
+    param: {},
+    fsRes: {},
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
+    this.setData({
+      param: JSON.stringify(options)
+    })
+    this.getFS();
 
   },
 
@@ -66,5 +70,24 @@ Page({
    */
   onShareAppMessage: function() {
 
+  },
+  getFS() {
+    console.log(this.data.param)
+    http({
+      apiName: '/api/getfangwei',
+      method: 'post',
+      data: this.data.param,
+    }).then(res => {
+      debugger
+      this.setData({
+        fsRes:res,
+      })
+
+    })
+  },
+  again(){
+    wx.navigateBack({
+      
+    })
   }
 })

@@ -1,11 +1,16 @@
 // pages/jryq/jryq.js
-import { global } from '../../utils/globalFunc.js'
+import { global } from '../../utils/globalFunc.js';
+import {
+  http,
+  baseUrl
+} from '../../utils/http.js'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    jryq: baseUrl + '/attachment/jryq',
     yourName:'',
     date: '', //picker to submit
     timeArr: [], //picker

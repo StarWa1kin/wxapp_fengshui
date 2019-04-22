@@ -2,14 +2,18 @@
 
 <view class='imgRes'>
   <image src='../../images/result.jpg'></image>
+  <view class='title'>{{result.titleshang}}
+    <text class='gold' style='color:#93825a'>\r{{result.titlexia}}</text>
+  </view>
+  <view class='title-fu'>{{result.titlefu}}</view>
 </view>
 
 <view class='detail'>
   <view class='topic'>签文详解</view>
   <view class='body'>
-    <view class='poetry font'>诗意</view>
-    <view class='xy font'>解曰</view>
-    <view class='story font'>故事</view>
+    <view class='poetry font'>诗意: {{result.shiyi}}</view>
+    <view class='xy font'>解曰: {{result.jieyue}}</view>
+    <view class='story font'>故事: {{result.gushi}}</view>
   </view>
 </view>
 

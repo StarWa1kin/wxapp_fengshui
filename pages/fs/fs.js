@@ -2,16 +2,21 @@
 import {
   global
 } from '../../utils/globalFunc.js';
+import {
+  http,
+  baseUrl
+} from '../../utils/http.js'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    compass: baseUrl + '/attachment/compass',
     angle: '',
     rotate: '',
     direction: '',
-    isLocked:false,
+    isLocked: false,
     coordinate: null,
     yourName: '',
     date: '', //picker to submit
@@ -113,14 +118,14 @@ Page({
       }
     }
   },
-  lockCompass(){
-    let isLocked=!this.data.isLocked;
+  lockCompass() {
+    let isLocked = !this.data.isLocked;
     this.setData({
       isLocked
     })
-    if(isLocked){
+    if (isLocked) {
       wx.stopCompass();
-    }else{
+    } else {
       this.compass()
     }
   },
@@ -178,24 +183,25 @@ Page({
   },
   draw() {
     //验证名字是否输入
-    if (this.data.yourName == "") {
-      wx.showToast({
-        title: '请先输入您的姓名',
-        icon: 'none'
-      })
-      return
-    } else {
+    // if (this.data.yourName == "") {
+    //   wx.showToast({
+    //     title: '请先输入您的姓名',
+    //     icon: 'none'
+    //   })
+    //   return
+    // } else {
       //整理date和姓名传输给后台
       let yourName = this.data.yourName.replace(/\s+/g, ""); //去除所有空格
       let yourDate = this.data.date;
       let yourHour = this.data.dayHours[this.data.index];
-      let bedromm = this.data.orientation[this.data.bedroom];
-      let door = this.data.orientation[this.data.door];
+      let bedromm = this.data.orientation[this.data.bedroom]; //取这个参数
+      let door = this.data.orientation[this.data.door]; //取这个参数
       let hearth = this.data.orientation[this.data.hearth];
-      debugger
-      // wx.navigateTo({
-      //   url: '../result/result',
-      // })
+
+      let xlh = global.conversionParam(bedromm,door)
+      wx.navigateTo({
+        url: '../fs-result/fs-result?fangwei='+xlh,
+      })
     }
-  }
+  // }
 })

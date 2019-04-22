@@ -5,7 +5,7 @@
   <view class='deg'>{{direction}}{{angle}}°</view>
   <view class='compass'>
     <view class='imgBox'>
-      <image src='../../images/compass.png' style="transform: rotate({{rotate}}deg)"></image>
+      <image src='{{compass}}' style="transform: rotate({{rotate}}deg)"></image>
     </view>
   </view>
   <view class='location'>

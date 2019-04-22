@@ -1,5 +1,5 @@
 <view class='imgRes'>
-  <image src='../../images/more.png'></image>
+  <image src='{{more}}'></image>
 </view>
 
 <!-- <view class='detail'>

@@ -1,18 +1,19 @@
 // pages/result/result.js
+import { http, baseUrl } from '../../utils/http.js'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    result:{},//签文结果
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.getResult();
   },
 
   /**
@@ -63,15 +64,28 @@ Page({
   onShareAppMessage: function () {
 
   },
-  again(){
-
+  again() {
+    this.getResult()
   },
-  shareFriends(){
+  shareFriends() {
     wx.updateShareMenu({
       withShareTicket: true,
       success() {
         debugger
-       }
+      }
     })
+  },
+  getResult() {
+    http({
+      apiName:'/api/getinfo',
+      method:'post',
+      showToast:true,
+    }).then(res=>{
+      // debugger
+      this.setData({
+        result:res
+      })
+
+    })  
   }
 })

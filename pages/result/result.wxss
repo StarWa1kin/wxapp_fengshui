@@ -4,12 +4,39 @@
   margin: 0 30rpx;
   height: 1000rpx;
   background: silver;
+  position: relative
 }
 
 .imgRes>image {
   width: 100%;
   height: 100%;
+  position: absolute
 }
+.title{
+  /* background: red; */
+  width: 40rpx;
+  height: 400rpx;
+  position: absolute;
+  right: 130rpx;
+  bottom: 100rpx;
+  color:white;
+  font-size: 34rpx;
+  font-weight: bold;
+  writing-mode:vertical-rl;
+  letter-spacing:5rpx;
+}
+.title-fu{
+  /* background: red; */
+  width: 100rpx;
+  height: 630rpx;
+  position: absolute;
+  left: 120rpx;
+  top: 220rpx;
+  font-size: 32rpx;
+  color:white;
+  writing-mode:vertical-rl;
+}
+
 
 .topic {
   height: 80rpx;
@@ -33,7 +60,7 @@
 }
 
 .story {
-  height: 260rpx;
+  /* height: 260rpx; */
   /* background: red; */
 }
 
