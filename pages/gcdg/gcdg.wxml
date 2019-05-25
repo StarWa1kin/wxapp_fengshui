@@ -57,7 +57,7 @@
 
 <!-- 二维码 -->
 <view class='seciton-QRcode'>
-  <view class='QRcode-box'>
+  <view class='QRcode-box' bindtap='viewImg'>
     <image src='../../images/QRcode.png'></image>
   </view>
   <view class='info'>

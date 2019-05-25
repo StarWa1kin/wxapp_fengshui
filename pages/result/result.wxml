@@ -21,6 +21,6 @@
 <view class='share'>
   <view>
     <view class='btn' bindtap='again'>再求一签</view>
-    <view class='btn backBtn' bindtap='shareFriends'>分享给好友</view>
+    <view class='btn backBtn' open-type="share">分享给好友</view>
   </view>
 </view>

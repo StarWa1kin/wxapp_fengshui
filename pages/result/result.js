@@ -61,18 +61,24 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
-
+  onShareAppMessage: function (res) {
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(res.target)
+    }
   },
   again() {
     this.getResult()
   },
   shareFriends() {
-    wx.updateShareMenu({
-      withShareTicket: true,
-      success() {
-        debugger
-      }
+    // wx.updateShareMenu({
+    //   withShareTicket: true,
+    //   success() {
+    //     debugger
+    //   }
+    // })
+    wx.showShareMenu({
+      withShareTicket: false
     })
   },
   getResult() {
@@ -81,11 +87,34 @@ Page({
       method:'post',
       showToast:true,
     }).then(res=>{
-      // debugger
       this.setData({
         result:res
       })
 
     })  
-  }
+  },
+
+  // onShareAppMessage: function (ops) {
+  //   debugger
+  //   if (ops.from === 'button') {
+  //     // 来自页面内转发按钮
+  //     console.log(ops.target)
+  //     console.log(this.data.id) //
+  //          //this.data.id 可以在Page({})里data中设定id
+
+  //   }
+  //   return {
+  //     title: '标签',
+  //     path: '/pages/detail/detail?id=' + this.data.id, //这里设定都是以"/page"开头,并拼接好传递的参数
+  //     success: function (res) {
+  //       // 转发成功
+  //       console.log(res);
+  //       console.log("转发成功:" + JSON.stringify(res));
+  //     },
+  //     fail: function (res) {
+  //       // 转发失败
+  //       console.log("转发失败:" + JSON.stringify(res));
+  //     }
+  //   }
+  // }
 })

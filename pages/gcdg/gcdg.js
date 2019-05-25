@@ -62,5 +62,11 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  viewImg(){
+    wx.previewImage({
+      current:'https://www.xxhui5.com:8443/attachment/QRcode',
+      urls: ["https://www.xxhui5.com:8443/attachment/QRcode"]
+    })
   }
 })

@@ -32,8 +32,7 @@ const sendRequest = (config) => {
 
       },
       fail(err) {
-        debugger
-        errMsg(err);
+        errMsg(err.errMsg);
         reject(err);
       },
       complete(result) {
