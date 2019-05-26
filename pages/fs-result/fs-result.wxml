@@ -13,6 +13,6 @@
 <view class='share'>
   <view>
     <view class='btn' bindtap='again'>再算一卦</view>
-    <view class='btn backBtn' bindtap='shareFriends'>分享给好友</view>
+      <button class='btn backBtn' open-type="share">分享给好友</button>
   </view>
 </view>

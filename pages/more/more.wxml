@@ -2,19 +2,9 @@
   <image src='{{more}}'></image>
 </view>
 
-<!-- <view class='detail'>
-  <view class='topic'>签文详解</view>
-  <view class='body'>
-    <view class='poetry font'>诗意</view>
-    <view class='xy font'>解曰</view>
-    <view class='story font'>故事</view>
-  </view>
-</view> -->
-
 
 <view class='share'>
   <view>
-    <!-- <view class='btn' bindtap='again'>再求一签</view> -->
-    <view class='btn backBtn' bindtap='shareFriends'>分享给好友</view>
+    <button class='btn backBtn' open-type='share'>分享给好友</button>
   </view>
 </view>
