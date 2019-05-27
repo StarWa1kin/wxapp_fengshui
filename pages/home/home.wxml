@@ -7,7 +7,10 @@
     </view>
     <view class='inputTxt'>今日一签</view>
   </view>
-  <view class='lookDetail' bindtap='lookDetail'>查看详情</view>
+  <view class='ab jryq' bindtap='toToday'>今日一签</view>
+  <view class='ab fs' bindtap='toWater'>风水</view>
+  <view class='ab gcdg' bindtap='toDao'>归藏道馆</view>
+  <view class='ab lookDetail' bindtap='lookDetail'>查看详情</view>
 </view>
 
 <!-- 热门专题 -->

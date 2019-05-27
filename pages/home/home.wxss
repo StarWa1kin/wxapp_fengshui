@@ -42,10 +42,29 @@
   padding-left: 10rpx;
   border-left: 1rpx solid #c0c0c0;
 }
+
+.ab{
+  position: absolute;
+
+}
+.jryq,.fs,.gcdg{
+  bottom: 280rpx;
+   font-size: 24rpx;
+   color: white;
+   opacity: 0
+}
+.jryq{
+  left: 200rpx;
+}
+.fs{
+  left: 350rpx;
+}
+.gcdg{
+  left: 440rpx
+}
 .lookDetail{
   color: white;
   font-size: 24rpx;
-  position: absolute;
   bottom: 50rpx;
   left: 45%;
   opacity: 0
