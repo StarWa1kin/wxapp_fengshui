@@ -2,7 +2,8 @@
 
 .section-cover {
   width: 100%;
-  height: 1110rpx;
+  /* height: 1110rpx; */
+  height: 1210rpx;
   background: silver;
   position: relative
 }
@@ -13,17 +14,18 @@
   position: absolute;
 }
 .search{
-  width: 320rpx;
-  height: 60rpx;
+  width: 400rpx;
+  height: 50rpx;
   background: white;
   position: absolute;
-  top: 65%;
-  left: 50%;
+  top: 67%;
+  left: 43%;
   transform: translate(-160rpx);
   border-radius: 60rpx;
   display: flex;
   align-items: center;
   padding-left: 20rpx;
+  opacity: 0
 }
 .fdj{
   height: 50rpx;
@@ -39,6 +41,14 @@
   margin-left: 10rpx;
   padding-left: 10rpx;
   border-left: 1rpx solid #c0c0c0;
+}
+.lookDetail{
+  color: white;
+  font-size: 24rpx;
+  position: absolute;
+  bottom: 50rpx;
+  left: 45%;
+  opacity: 0
 }
 .topic {
   height: 80rpx;
@@ -95,6 +105,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.todayTime>view{
+  background: #e9e9e9
 }
 
 .timeIcon {
@@ -156,7 +169,8 @@
 .form-item {
   margin: 0 30rpx;
   height: 100rpx;
-  border-bottom: 1rpx solid #c0c0c0;
+  /* border-bottom: 1rpx solid #c0c0c0; */
+  border: 1rpx solid #c9c9c9;
   display: flex;
   align-items: center;
 }

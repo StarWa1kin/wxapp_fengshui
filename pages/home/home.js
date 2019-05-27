@@ -3,7 +3,8 @@ import {
   global
 } from '../../utils/globalFunc.js';
 import {
-  http,baseUrl
+  http,
+  baseUrl
 } from '../../utils/http.js';
 Page({
 
@@ -11,8 +12,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    banner: baseUrl +'/attachment/banner',
-    yinyang:{},
+    banner: baseUrl + '/attachment/banner',
+    yinyang: {},
     nowTime: '', //to show
     yourName: '', //to submit
     date: '', //picker to submit
@@ -25,6 +26,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
+    wx.hideTabBar()
     global.setNowtime(this);
     this.getTime();
   },
@@ -47,7 +49,9 @@ Page({
    * 生命周期函数--监听页面隐藏
    */
   onHide: function() {
+    wx.showTabBar({
 
+    })
   },
 
   /**
@@ -69,6 +73,13 @@ Page({
    */
   onReachBottom: function() {
 
+  },
+  onPageScroll:function(e){
+    if(e.scrollTop>=600){
+      wx.showTabBar()
+    }else{
+      wx.hideTabBar()
+    }
   },
 
   /**
@@ -95,16 +106,25 @@ Page({
   //   })
 
   // },
-  getTime(){
+  lookDetail() {
+    wx.pageScrollTo({
+      scrollTop: 610,
+      duration: 300,
+      complete() {
+        wx.showTabBar()
+      }
+    })
+  },
+  getTime() {
     http({
-      apiName:'/api/setNumber',
-      method:'post',
-    })
-    .then(res=>{
-      this.setData({
-        yinyang:res
+        apiName: '/api/setNumber',
+        method: 'post',
       })
-    })
+      .then(res => {
+        this.setData({
+          yinyang: res
+        })
+      })
   },
   toMore() {
     wx.navigateTo({
