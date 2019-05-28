@@ -3,19 +3,22 @@
 .section-cover{
   margin: 0 30rpx;
   height: 300rpx;
-  /* background: red; */
 }
 .section-cover>image{
   width: 100%;
   height: 100%;
 }
 /* form */
+
 .form-item {
-  margin: 20rpx 30rpx;
+  margin: 0 30rpx;
   height: 100rpx;
-  border-bottom: 1rpx solid #c0c0c0;
+  border: 1rpx solid #c9c9c9;
   display: flex;
   align-items: center;
+}
+.first-item{
+  margin-top:40rpx; 
 }
 
 .label {

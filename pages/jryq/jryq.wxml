@@ -7,7 +7,7 @@
 
 <!-- 表单填写 -->
 <view class='section-form'>
-  <view class='form-item'>
+  <view class='form-item first-item'>
     <view class='label'>您的名字:</view>
     <view class='input'>
       <input bindinput="bindKeyInput" value='{{yourName}}' maxlength="6" placeholder="请输入您的姓氏及名字" />

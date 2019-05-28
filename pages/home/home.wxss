@@ -5,7 +5,7 @@
   /* height: 1110rpx; */
   height: 1210rpx;
   background: silver;
-  position: relative
+  position: relative;
 }
 
 .section-cover>image {
@@ -13,29 +13,33 @@
   height: 100%;
   position: absolute;
 }
-.search{
+
+.search {
   width: 400rpx;
   height: 50rpx;
   background: white;
   position: absolute;
-  top: 67%;
+  top: 64%;
   left: 43%;
   transform: translate(-160rpx);
   border-radius: 60rpx;
   display: flex;
   align-items: center;
   padding-left: 20rpx;
-  opacity: 0
+  opacity: 0;
 }
-.fdj{
+
+.fdj {
   height: 50rpx;
   width: 50rpx;
 }
-.fdj>image{
+
+.fdj>image {
   width: 100%;
   height: 100%;
 }
-.inputTxt{
+
+.inputTxt {
   height: 50rpx;
   line-height: 50rpx;
   margin-left: 10rpx;
@@ -43,32 +47,37 @@
   border-left: 1rpx solid #c0c0c0;
 }
 
-.ab{
+.ab {
   position: absolute;
+}
 
+.jryq, .fs, .gcdg {
+  bottom: 310rpx;
+  font-size: 24rpx;
+  color: white;
+  opacity: 0;
 }
-.jryq,.fs,.gcdg{
-  bottom: 280rpx;
-   font-size: 24rpx;
-   color: white;
-   opacity: 0
-}
-.jryq{
+
+.jryq {
   left: 200rpx;
 }
-.fs{
-  left: 350rpx;
+
+.fs {
+  left: 344rpx;
 }
-.gcdg{
-  left: 440rpx
+
+.gcdg {
+  left: 438rpx;
 }
-.lookDetail{
+
+.lookDetail {
   color: white;
   font-size: 24rpx;
-  bottom: 50rpx;
-  left: 45%;
-  opacity: 0
+  bottom: 55rpx;
+  left: 44%;
+  opacity: 0;
 }
+
 .topic {
   height: 80rpx;
   line-height: 80rpx;
@@ -125,8 +134,17 @@
   align-items: center;
   justify-content: space-between;
 }
-.todayTime>view{
-  background: #e9e9e9
+
+.todaybox {
+  margin: 0 30rpx;
+  /* width: 690rpx; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todayTime>view {
+  background: #e9e9e9;
 }
 
 .timeIcon {
@@ -141,7 +159,7 @@
 
 .lunar {
   width: 345rpx;
-  margin-left: 30rpx;
+  /* margin-left: 30rpx; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -155,7 +173,7 @@
 
 .solar {
   width: 345rpx;
-  margin-right: 30rpx;
+  /* margin-right: 30rpx; */
   display: flex;
   align-items: center;
 }

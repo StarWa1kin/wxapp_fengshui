@@ -39,7 +39,8 @@
 
 <!-- 今日时间 -->
 <view class='todayTime'>
-  <view class='lunar'>
+  <view class='todaybox'>
+    <view class='lunar'>
     <view class='timeIcon'>
       <image src="../../images/jrsj.png"></image>
     </view>
@@ -53,6 +54,7 @@
       <text class='timeFont timeColor'>阳历 </text>
       <text class='timeFont tiemBlod'>{{yinyang.yang}}</text>
     </view>
+  </view>
   </view>
 </view>
 
