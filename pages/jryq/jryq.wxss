@@ -61,3 +61,14 @@
   background: #938463;
   color: white;
 }
+
+
+
+.modalImg{
+  width: 560rpx;
+  height: 420rpx;
+}
+.modalImg>image{
+  width: 100%;
+  height: 100%;
+}

@@ -16,6 +16,7 @@ Page({
     timeArr: [], //picker
     dayHours: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24],
     index: 0,
+    modalHidden:true
   },
 
   /**
@@ -74,8 +75,35 @@ Page({
 
   },
   draw() {
+    let yourName = this.data.yourName.replace(/\s+/g, ""); //去除所有空格
+    let yourDate = this.data.date;
+    let yourHour = this.data.dayHours[this.data.index];
+    //modal提示
+    if (yourName == "" || yourDate == "") {
+      this.setData({
+        modalHidden: false
+      })
+    } else {
+      wx.navigateTo({
+        url: '../result/result',
+      })
+    }
+    // wx.navigateTo({
+    //   url: '../result/result',
+    // })
+  },
+  modalConfirm() {
+    this.setData({
+      modalHidden: true
+    })
     wx.navigateTo({
       url: '../result/result',
+    })
+  },
+
+  modalCandel() {
+    this.setData({
+      modalHidden: true
     })
   }
 })

@@ -20,6 +20,7 @@ Page({
     timeArr: [], //picker
     dayHours: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24],
     index: 0,
+    modalHidden: true
   },
 
   /**
@@ -164,22 +165,51 @@ Page({
     })
   },
   draw() {
-    //验证名字是否输入
-    if (this.data.yourName == "") {
-      wx.showToast({
-        title: '请先输入您的姓名',
-        icon: 'none'
+    let yourName = this.data.yourName.replace(/\s+/g, ""); //去除所有空格
+    let yourDate = this.data.date;
+    let yourHour = this.data.dayHours[this.data.index];
+    //modal提示
+    if (yourName == "" || yourDate == "") {
+      this.setData({
+        modalHidden: false
       })
-      return
     } else {
-      //整理date和姓名传输给后台
-      let yourName = this.data.yourName.replace(/\s+/g, ""); //去除所有空格
-      let yourDate = this.data.date;
-      let yourHour = this.data.dayHours[this.data.index];
-      // debugger
       wx.navigateTo({
         url: '../result/result',
       })
     }
+
+    //验证名字是否输入
+    // if (this.data.yourName == "") {
+    //   wx.showToast({
+    //     title: '请先输入您的姓名',
+    //     icon: 'none'
+    //   })
+    //   return
+    // } else {
+    //   //整理date和姓名传输给后台
+    //   let yourName = this.data.yourName.replace(/\s+/g, ""); //去除所有空格
+    //   let yourDate = this.data.date;
+    //   let yourHour = this.data.dayHours[this.data.index];
+    //   // debugger
+    //   wx.navigateTo({
+    //     url: '../result/result',
+    //   })
+    // }
+  },
+  modalConfirm() {
+    debugger
+    this.setData({
+      modalHidden: true
+    })
+    wx.navigateTo({
+      url: '../result/result',
+    })
+  },
+
+  modalCandel() {
+    this.setData({
+      modalHidden: true
+    })
   }
 })
