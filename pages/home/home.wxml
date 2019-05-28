@@ -84,3 +84,10 @@
 <view class='btnBox'>
   <view class='btn' bindtap='draw'>我要抽签</view>
 </view>
+
+
+<modal class="modal" title="温馨提示" hidden="{{modalHidden}}" bindconfirm="modalConfirm" bindcancel="modalCandel">
+  <view class="modalImg">
+    <image class="image" src="../../images/toast.png" mode='aspectFill'></image>
+  </view>
+</modal>
