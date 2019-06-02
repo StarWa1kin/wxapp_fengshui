@@ -1,5 +1,5 @@
 <!-- 首页封面 -->
-<view class="section-cover">
+<view class="section-cover" >
   <image src="../../images/banner.png"></image>
   <view class='search' bindtap='toToday'>
     <view class="fdj">

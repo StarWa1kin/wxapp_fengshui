@@ -19,7 +19,7 @@ Page({
     date: '', //picker to submit
     timeArr: [], //picker
     dayHours: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24],
-    index: 0,
+    index: "",
     modalHidden: true
   },
 
@@ -27,8 +27,17 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    wx.hideTabBar()
-    global.setNowtime(this);
+    wx.getSystemInfo({
+      success:(res)=> {
+        // debugger
+        let nowHeig = res.windowWidth;
+        this.setData({
+          height:nowHeig
+        })
+      },
+    })
+    // wx.hideTabBar()
+    // global.setNowtime(this);
     this.getTime();
   },
 
@@ -50,9 +59,7 @@ Page({
    * 生命周期函数--监听页面隐藏
    */
   onHide: function() {
-    wx.showTabBar({
-
-    })
+    
   },
 
   /**
@@ -76,11 +83,11 @@ Page({
 
   },
   onPageScroll:function(e){
-    if(e.scrollTop>=600){
-      wx.showTabBar()
-    }else{
-      wx.hideTabBar()
-    }
+    // if(e.scrollTop){
+    //   wx.showTabBar()
+    // }else{
+    //   wx.hideTabBar()
+    // }
   },
 
   /**
@@ -109,10 +116,10 @@ Page({
   // },
   lookDetail() {
     wx.pageScrollTo({
-      scrollTop: 610,
+      scrollTop: 600,
       duration: 300,
       complete() {
-        wx.showTabBar()
+        // wx.showTabBar()
       }
     })
   },
@@ -198,7 +205,6 @@ Page({
     // }
   },
   modalConfirm() {
-    debugger
     this.setData({
       modalHidden: true
     })

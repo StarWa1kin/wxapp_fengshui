@@ -16,17 +16,17 @@
 
 .search {
   width: 400rpx;
-  height: 50rpx;
+  height: 70rpx;
   background: white;
   position: absolute;
-  top: 64%;
+  top: 62%;
   left: 43%;
   transform: translate(-160rpx);
   border-radius: 60rpx;
   display: flex;
   align-items: center;
   padding-left: 20rpx;
-  opacity: 0;
+  opacity:0;
 }
 
 .fdj {
@@ -52,7 +52,7 @@
 }
 
 .jryq, .fs, .gcdg {
-  bottom: 310rpx;
+  bottom: 325rpx;
   font-size: 24rpx;
   color: white;
   opacity: 0;
@@ -73,7 +73,7 @@
 .lookDetail {
   color: white;
   font-size: 24rpx;
-  bottom: 55rpx;
+  bottom: 50rpx;
   left: 44%;
   opacity: 0;
 }
@@ -205,7 +205,7 @@
 
 .form-item {
   margin: 0 30rpx;
-  height: 100rpx;
+  height: 110rpx;
   /* border-bottom: 1rpx solid #c0c0c0; */
   border: 1rpx solid #c9c9c9;
   display: flex;

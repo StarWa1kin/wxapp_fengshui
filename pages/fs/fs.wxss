@@ -83,10 +83,18 @@
   height: 100rpx;
   /* border-bottom: 1rpx solid #c0c0c0; */
   border: 1rpx solid #c9c9c9;
+  /* margin-bottom:-1px; */
+  /* margin:0px 0px -1px -1px; */
   display: flex;
   align-items: center;
 }
-
+.f-item{
+  border-bottom: none;
+}
+.t-item{
+  border-bottom: none;
+  border-top: none;
+}
 .label {
   font-size: 30rpx;
   font-weight: bold;

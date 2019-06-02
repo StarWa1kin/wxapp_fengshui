@@ -22,7 +22,7 @@ Page({
     date: '', //picker to submit
     timeArr: [], //picker
     dayHours: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24],
-    index: 0,
+    index: "",
     orientation: ["东方", "东南方", "南方", "西南方", "西方", "西北方", "北方", "东北方"],
     bedroom: 0,
     door: 1,
@@ -33,7 +33,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    global.setNowtime(this);
+    // global.setNowtime(this);
     this.compass()
   },
 
