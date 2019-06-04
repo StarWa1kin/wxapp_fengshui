@@ -116,7 +116,7 @@ Page({
   // },
   lookDetail() {
     wx.pageScrollTo({
-      scrollTop: 600,
+      scrollTop: this.data.height,
       duration: 300,
       complete() {
         // wx.showTabBar()

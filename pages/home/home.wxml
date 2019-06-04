@@ -1,10 +1,8 @@
 <!-- 首页封面 -->
 <view class="section-cover" style='height:{{height}}px'>
-  <!-- <image src="../../images/banner.png"  style='height:{{height}}px'></image> -->
+  <image src="../../images/banner.png"  style='height:{{height}}px'></image>
   <view class='search' bindtap='toToday'>
-    <view class="fdj">
-      <image src='../../images/fdj.png'></image>
-    </view>
+    
     <view class='inputTxt'>今日一签</view>
   </view>
   <view class='ab jryq' bindtap='toToday'>今日一签</view>
