@@ -58,7 +58,7 @@
 .loaction-txt {
   width: 90%;
   padding-bottom: 40rpx;
-  border-bottom: 1rpx solid #c0c0c0;
+  /* border-bottom: 1rpx solid #c0c0c0; */
   text-align: center;
 }
 

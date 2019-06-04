@@ -29,8 +29,8 @@ Page({
   onLoad: function(options) {
     wx.getSystemInfo({
       success:(res)=> {
-        // debugger
-        let nowHeig = res.windowWidth;
+        let nowHeig = res.windowHeight;
+        console.log(nowHeig)
         this.setData({
           height:nowHeig
         })

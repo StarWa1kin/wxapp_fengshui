@@ -19,6 +19,7 @@
 }
 .first-item{
   margin-top:40rpx; 
+  border-bottom: none;
 }
 
 .label {

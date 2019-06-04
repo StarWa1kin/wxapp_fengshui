@@ -15,7 +15,7 @@
   line-height: 120rpx;
   margin: 0 30rpx;
   font-weight: bold;
-  border-bottom: 1rpx solid #c9c9c9;
+  /* border-bottom: 1rpx solid #c9c9c9; */
 }
 
 .hot-item {

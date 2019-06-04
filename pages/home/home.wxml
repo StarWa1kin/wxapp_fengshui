@@ -1,6 +1,6 @@
 <!-- 首页封面 -->
-<view class="section-cover" >
-  <image src="../../images/banner.png"></image>
+<view class="section-cover" style='height:{{height}}px'>
+  <!-- <image src="../../images/banner.png"  style='height:{{height}}px'></image> -->
   <view class='search' bindtap='toToday'>
     <view class="fdj">
       <image src='../../images/fdj.png'></image>
@@ -60,7 +60,7 @@
 
 <!-- 表单填写 -->
 <view class='section-form'>
-  <view class='form-item'>
+  <view class='form-item f-b'>
     <view class='label'>您的名字:</view>
     <view class='input'>
       <input bindinput="bindKeyInput" value='{{yourName}}' maxlength="6" placeholder="请输入您的姓氏及名字" />
