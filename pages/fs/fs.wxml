@@ -14,7 +14,7 @@
     </view>
     <view class='loaction-txt' wx:if="{{coordinate==null}}">请点击 进行定位</view>
     <view wx:else class='loaction-txt'>精度:{{coordinate.longitude[0]}}°{{coordinate.longitude[1]}}′ 纬度:{{coordinate.latitude[0]}}°{{coordinate.latitude[1]}}′ 海拔:{{coordinate.altitude}}米</view>
-    <view class='locked' bindtap='lockCompass'>{{isLocked?"接除锁定":"锁定"}}</view>
+    <view class='locked' bindtap='lockCompass'>{{isLocked?"解除锁定":"锁定"}}</view>
   </view>
 </view>
 
