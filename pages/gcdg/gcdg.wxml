@@ -9,7 +9,7 @@
     <view class='imgBox'>
       <image src='../../images/gcdg_item1.png'></image>
     </view>
-    <view class='detailBox'>
+    <view class='detailBox' bindtap='jryq'>
       <view class='txtBox blod'>今日一签</view>
       <view class='txtBox'>
         <view class='detailTxt'>故事：山中宰相之典故其实应该是</view>
@@ -17,7 +17,7 @@
       </view>
     </view>
   </view>
-  <view class="hot-item">
+  <view class="hot-item" bindtap='fs'>
     <view class='imgBox'>
       <image src='../../images/gcdg_item2.png'></image>
     </view>

@@ -68,5 +68,15 @@ Page({
       current:'https://www.xxhui5.com:8443/attachment/QRcode',
       urls: ["https://www.xxhui5.com:8443/attachment/QRcode"]
     })
+  },
+  jryq(){
+    wx.switchTab({
+      url: '../jryq/jryq',
+    })
+  },
+  fs(){
+    wx.switchTab({
+      url: '../fs/fs',
+    })
   }
 })
