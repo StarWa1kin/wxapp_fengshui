@@ -24,14 +24,14 @@
 <view class='section-form'>
 
   <view class='form-item f-item'>
-    <view class='label'>您的名字:</view>
+    <view class='label'><text style='color:red'>*</text>您的名字:</view>
     <view class='input'>
       <input bindinput="bindKeyInput" value='{{yourName}}' maxlength="6" placeholder="请输入您的姓氏及名字" />
     </view>
   </view>
 
   <view class='form-item s-item'>
-    <view class='label'>出生日期:</view>
+    <view class='label'><text style='color:red'>*</text>出生日期:</view>
     <picker mode="date" value="{{date}}" start="1919-01-01" end="2100-12-31" bindchange="bindDateChange">
       <view class='date value1'>{{timeArr[0]}}</view>
       <view class='date'>年</view>
@@ -47,7 +47,7 @@
   </view>
 
   <view class='form-item t-item'>
-    <view class='label'>卧室朝向:</view>
+    <view class='label'><text style='color:red'>*</text>卧室朝向:</view>
     <picker value="{{bedroom}}" range="{{orientation}}" bindchange="bindRoomPicker">
       <!-- <view wx:if="{{bedroom=='true'}}">请选择</view> -->
       <view class='morelong'>{{orientation[bedroom]}}</view>
@@ -55,14 +55,14 @@
   </view>
 
   <view class='form-item f-item'>
-    <view class='label'>大门朝向:</view>
+    <view class='label'><text style='color:red'>*</text>大门朝向:</view>
     <picker value="{{door}}" range="{{orientation}}" bindchange="bindDoorPicker">
       <view class='morelong'>{{orientation[door]}}</view>
     </picker>
   </view>
 
   <view class='form-item'>
-    <view class='label'>灶台朝向:</view>
+    <view class='label'><text style='color:red'>*</text>灶台朝向:</view>
     <picker value="{{hearth}}" range="{{orientation}}" bindchange="bindHearthPicker">
       <view class='morelong'>{{orientation[hearth]}}</view>
     </picker>

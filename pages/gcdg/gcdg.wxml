@@ -1,9 +1,9 @@
 <view class='section-cover'>
-  <image src='../../images/gcdg.jpg'></image>
+  <image src='../../images/gcdg.png'></image>
 </view>
 
 <!-- 热门专题  -->
-<view class="section-hot">
+<!-- <view class="section-hot">
   <view class="topic">热门专题</view>
   <view class="hot-item">
     <view class='imgBox'>
@@ -29,19 +29,16 @@
       </view>
     </view>
   </view>
-</view>
+</view> -->
 
 <!-- 归藏道馆 -->
 <view class="seciton-more">
   <view class="topic">归藏道馆</view>
   <view class='introduce'>
-    <view style='margin-top:40rpx;'>于渊归藏 文化传播公司 致力于将传统国学易学与现实相结</view>
-    <view>合发扬传统文化 发掘传统国学精髓</view>
-    <view>本公司将晦涩难惮的易学知识与现代现象相结合 使这门古</view>
-    <view>老的学问焕发活力</view>
-    <view>归藏道馆 是本公司旗下的一间易学道馆 馆长 归藏山人 系</view>
-    <view>江夏易学嫡系第七代传人 流传有序 目前馆方开设有 以</view>
-    <view>下业务</view>
+    <view style='margin-top:40rpx;'>于渊归藏文化传播公司致力于将传统国学、易学与现实相结合。发扬传统文化，发掘传统国学精髓。 </view>
+    <view>本公司将晦涩难惮的易学知识与现代现象相结合，使这门古老的学问焕发活力。</view>
+    <view>归藏道馆是本公司旗下的一间易学道馆，馆长归藏山人系</view>
+    <view>江夏易学嫡系第七代传人，流传有序，目前馆方开设有以下业务。</view>
   </view>
 </view>
 
@@ -56,7 +53,7 @@
 </view>
 
 <!-- 二维码 -->
-<view class='seciton-QRcode'>
+<!-- <view class='seciton-QRcode'>
   <view class='QRcode-box' bindtap='viewImg'>
     <image src='../../images/QRcode.png'></image>
   </view>
@@ -66,6 +63,12 @@
       <view class='little'>扫描加二维码</view>
     </view>
   </view>
+</view> -->
+
+
+<view class='tuiguang'>
+  <image class='bg' src='../../images/scanning.png'></image>
+  <image class='QRcode' src='../../images/QRcode.png' bindtap='viewImg'></image>
 </view>
 
 <!-- 更多业务  -->

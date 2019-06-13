@@ -17,6 +17,10 @@
   </view>
 </view>
 
+<view class='tuiguang'>
+  <image class='bg' src='../../images/scanning.png'></image>
+  <image class='QRcode' src='../../images/QRcode.png' bindtap='fd'></image>
+</view>
 
 <view class='share'>
   <view>
