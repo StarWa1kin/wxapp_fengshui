@@ -1,4 +1,3 @@
-
 page {
   background: #cecece;
 }
@@ -33,4 +32,34 @@ page {
   text-align: center;
   background: #938463;
   color: white;
+}
+
+.showArea image{
+  width: 100rpx;
+  height: 100rpx;
+}
+
+
+
+.container2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.group {
+  width: 42%;
+  /* background: red; */
+  margin: 10rpx 30rpx;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30rpx 0;
+}
+
+.imgContainer {
+}
+
+.img {
+  width: 100rpx;
+  height: 100rpx;
 }

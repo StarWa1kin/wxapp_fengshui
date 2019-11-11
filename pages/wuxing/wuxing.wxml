@@ -8,7 +8,7 @@
   </view>
 
   <view class="showArea">
-
+     <image wx:for="{{addStatus}}" wx:key="{{index}}" src="{{item.path}}" bindtap="cancel" id="{{item.name}}"></image>
   </view>
 
 
@@ -20,4 +20,18 @@
     <view class='btn' bindtap='nextStep'>下一步</view>
   </view>
 
+</view>
+
+
+
+
+
+
+
+<view class='container2'>
+  <view class="group" wx:for='{{colors}}' wx:key="{{item}}">
+    <view class="imgContainer" wx:for='{{item}}' wx:key="{{sub}}" wx:for-item="sub" bindtap="choose" id="{{sub.name}}">
+      <image class="img" src="{{sub.path}}"></image>
+    </view>
+  </view>
 </view>
