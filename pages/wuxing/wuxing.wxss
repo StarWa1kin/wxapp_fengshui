@@ -1,0 +1,36 @@
+
+page {
+  background: #cecece;
+}
+
+.yourDislike {
+  text-align: center;
+}
+
+.spec {
+  color: #8f0803;
+}
+
+.tips {
+  font-size: 20rpx;
+  color: #909090;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+.btnBox {
+  height: 160rpx;
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin: 0 30rpx;
+  border-radius: 6rpx;
+  text-align: center;
+  background: #938463;
+  color: white;
+}

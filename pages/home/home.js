@@ -145,8 +145,8 @@ Page({
     })
   },
   toWater() {
-    wx.switchTab({
-      url: '../fs/fs',
+    wx.navigateTo({
+      url: '../wuxing/wuxing',
     })
   },
   toDao() {

@@ -6,7 +6,9 @@
     "pages/gcdg/gcdg",
     "pages/result/result",
     "pages/fs-result/fs-result",
-    "pages/more/more"
+    "pages/more/more",
+    "pages/wuxing/wuxing",
+    "pages/wuxing2/wuxing2"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -45,9 +47,7 @@
       }
     ]
   },
-  "plugins": {
-    
-  },
+  "plugins": {},
   "permission": {
     "scope.userLocation": {
       "desc": "你的位置信息将用于小程序位置接口的效果展示"

@@ -1,0 +1,23 @@
+<view class='yourDislike'>
+  <view class="title">
+    <view>请在以下颜色中选择出</view>
+    <view>
+      <text class="spec">6种不喜欢的</text>
+      <text>的颜色</text>
+    </view>
+  </view>
+
+  <view class="showArea">
+
+  </view>
+
+
+  <view class="tips">
+    注：点击颜色块可以删除重新选择颜色
+  </view>
+
+  <view class='btnBox'>
+    <view class='btn' bindtap='nextStep'>下一步</view>
+  </view>
+
+</view>
