@@ -1,0 +1,30 @@
+<view class="imgBox">
+  <image class="star" src="../../images/star.png"></image>
+
+
+  <!-- dislike -->
+  <view class="dislike1 c">
+    <image src="{{dislike[0]}}"></image>
+  </view>
+  <view class="dislike2 c">
+    <image src="{{dislike[1]}}"></image>
+  </view>
+  <view class="dislike3 c">
+    <image src="{{dislike[2]}}"></image>
+  </view>
+  <view class="dislike4 c">
+    <image src="{{dislike[3]}}"></image>
+  </view>
+  <view class="dislike5 c">
+    <image src="{{dislike[4]}}"></image>
+  </view>
+  <view class="dislike6 c">
+    <image src="{{dislike[5]}}"></image>
+  </view>
+
+
+  <!-- like -->
+
+
+
+</view>

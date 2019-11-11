@@ -1,4 +1,5 @@
 // pages/wuxing/wuxing.js
+let app = getApp();
 Page({
 
   /**
@@ -105,7 +106,7 @@ Page({
         path: '../../images/colors/2/12.png'
       }
       ],
-      //
+      //3
       [{
         name: '3-1',
         path: '../../images/colors/3/01.png'
@@ -153,6 +154,356 @@ Page({
       {
         name: '3-12',
         path: '../../images/colors/3/12.png'
+      }
+      ],
+      //4
+      [{
+        name: '4-1',
+        path: '../../images/colors/4/01.png'
+      },
+      {
+        name: '4-2',
+        path: '../../images/colors/4/02.png'
+      },
+      {
+        name: '4-3',
+        path: '../../images/colors/4/03.png'
+      },
+      {
+        name: '4-4',
+        path: '../../images/colors/4/04.png'
+      },
+      {
+        name: '4-5',
+        path: '../../images/colors/4/05.png'
+      },
+      {
+        name: '4-6',
+        path: '../../images/colors/4/06.png'
+      },
+      {
+        name: '4-7',
+        path: '../../images/colors/4/07.png'
+      },
+      {
+        name: '4-8',
+        path: '../../images/colors/4/08.png'
+      },
+      {
+        name: '4-9',
+        path: '../../images/colors/4/09.png'
+      },
+      {
+        name: '4-10',
+        path: '../../images/colors/4/10.png'
+      },
+      {
+        name: '4-11',
+        path: '../../images/colors/4/11.png'
+      },
+      {
+        name: '4-12',
+        path: '../../images/colors/4/12.png'
+      }
+      ],
+      //5
+      [{
+        name: '5-1',
+        path: '../../images/colors/5/01.png'
+      },
+      {
+        name: '5-2',
+        path: '../../images/colors/5/02.png'
+      },
+      {
+        name: '5-3',
+        path: '../../images/colors/5/03.png'
+      },
+      {
+        name: '5-4',
+        path: '../../images/colors/5/04.png'
+      },
+      {
+        name: '5-5',
+        path: '../../images/colors/5/05.png'
+      },
+      {
+        name: '5-6',
+        path: '../../images/colors/5/06.png'
+      },
+      {
+        name: '5-7',
+        path: '../../images/colors/5/07.png'
+      },
+      {
+        name: '5-8',
+        path: '../../images/colors/5/08.png'
+      },
+      {
+        name: '5-9',
+        path: '../../images/colors/5/09.png'
+      },
+      {
+        name: '5-10',
+        path: '../../images/colors/5/10.png'
+      },
+      {
+        name: '5-11',
+        path: '../../images/colors/5/11.png'
+      },
+      {
+        name: '5-12',
+        path: '../../images/colors/5/12.png'
+      }
+      ],
+      //6
+      [{
+        name: '6-1',
+        path: '../../images/colors/6/01.png'
+      },
+      {
+        name: '6-2',
+        path: '../../images/colors/6/02.png'
+      },
+      {
+        name: '6-3',
+        path: '../../images/colors/6/03.png'
+      },
+      {
+        name: '6-4',
+        path: '../../images/colors/6/04.png'
+      },
+      {
+        name: '6-5',
+        path: '../../images/colors/6/05.png'
+      },
+      {
+        name: '6-6',
+        path: '../../images/colors/6/06.png'
+      },
+      {
+        name: '6-7',
+        path: '../../images/colors/6/07.png'
+      },
+      {
+        name: '6-8',
+        path: '../../images/colors/6/08.png'
+      },
+      {
+        name: '6-9',
+        path: '../../images/colors/6/09.png'
+      },
+      {
+        name: '6-10',
+        path: '../../images/colors/6/10.png'
+      },
+      {
+        name: '6-11',
+        path: '../../images/colors/6/11.png'
+      },
+      {
+        name: '6-12',
+        path: '../../images/colors/6/12.png'
+      }
+      ],
+      //7
+      [{
+        name: '7-1',
+        path: '../../images/colors/7/01.png'
+      },
+      {
+        name: '7-2',
+        path: '../../images/colors/7/02.png'
+      },
+      {
+        name: '7-3',
+        path: '../../images/colors/7/03.png'
+      },
+      {
+        name: '7-4',
+        path: '../../images/colors/7/04.png'
+      },
+      {
+        name: '7-5',
+        path: '../../images/colors/7/05.png'
+      },
+      {
+        name: '7-6',
+        path: '../../images/colors/7/06.png'
+      },
+      {
+        name: '7-7',
+        path: '../../images/colors/7/07.png'
+      },
+      {
+        name: '7-8',
+        path: '../../images/colors/7/08.png'
+      },
+      {
+        name: '7-9',
+        path: '../../images/colors/7/09.png'
+      },
+      {
+        name: '7-10',
+        path: '../../images/colors/7/10.png'
+      },
+      {
+        name: '7-11',
+        path: '../../images/colors/7/11.png'
+      },
+      {
+        name: '7-12',
+        path: '../../images/colors/7/12.png'
+      }
+      ],
+      //8
+      [{
+        name: '8-1',
+        path: '../../images/colors/8/01.png'
+      },
+      {
+        name: '8-2',
+        path: '../../images/colors/8/02.png'
+      },
+      {
+        name: '8-3',
+        path: '../../images/colors/8/03.png'
+      },
+      {
+        name: '8-4',
+        path: '../../images/colors/8/08.png'
+      },
+      {
+        name: '8-5',
+        path: '../../images/colors/8/05.png'
+      },
+      {
+        name: '8-6',
+        path: '../../images/colors/8/06.png'
+      },
+      {
+        name: '8-7',
+        path: '../../images/colors/8/07.png'
+      },
+      {
+        name: '8-8',
+        path: '../../images/colors/8/08.png'
+      },
+      {
+        name: '8-9',
+        path: '../../images/colors/8/09.png'
+      },
+      {
+        name: '8-10',
+        path: '../../images/colors/8/10.png'
+      },
+      {
+        name: '8-11',
+        path: '../../images/colors/8/11.png'
+      },
+      {
+        name: '8-12',
+        path: '../../images/colors/8/12.png'
+      }
+      ],
+      //9
+      [{
+        name: '9-1',
+        path: '../../images/colors/9/01.png'
+      },
+      {
+        name: '9-2',
+        path: '../../images/colors/9/02.png'
+      },
+      {
+        name: '9-3',
+        path: '../../images/colors/9/03.png'
+      },
+      {
+        name: '9-4',
+        path: '../../images/colors/9/04.png'
+      },
+      {
+        name: '9-5',
+        path: '../../images/colors/9/05.png'
+      },
+      {
+        name: '9-6',
+        path: '../../images/colors/9/06.png'
+      },
+      {
+        name: '9-7',
+        path: '../../images/colors/9/07.png'
+      },
+      {
+        name: '9-8',
+        path: '../../images/colors/9/08.png'
+      },
+      {
+        name: '9-9',
+        path: '../../images/colors/9/09.png'
+      },
+      {
+        name: '9-10',
+        path: '../../images/colors/9/10.png'
+      },
+      {
+        name: '9-11',
+        path: '../../images/colors/9/11.png'
+      },
+      {
+        name: '9-12',
+        path: '../../images/colors/9/12.png'
+      }
+      ],
+      //10
+      [{
+        name: '10-1',
+        path: '../../images/colors/10/01.png'
+      },
+      {
+        name: '10-2',
+        path: '../../images/colors/10/02.png'
+      },
+      {
+        name: '10-3',
+        path: '../../images/colors/10/03.png'
+      },
+      {
+        name: '10-4',
+        path: '../../images/colors/10/04.png'
+      },
+      {
+        name: '10-5',
+        path: '../../images/colors/10/05.png'
+      },
+      {
+        name: '10-6',
+        path: '../../images/colors/10/06.png'
+      },
+      {
+        name: '10-7',
+        path: '../../images/colors/10/07.png'
+      },
+      {
+        name: '10-8',
+        path: '../../images/colors/10/08.png'
+      },
+      {
+        name: '10-9',
+        path: '../../images/colors/10/09.png'
+      },
+      {
+        name: '10-10',
+        path: '../../images/colors/10/10.png'
+      },
+      {
+        name: '10-11',
+        path: '../../images/colors/10/11.png'
+      },
+      {
+        name: '10-12',
+        path: '../../images/colors/10/12.png'
       }
       ],
     ],
@@ -215,36 +566,52 @@ Page({
 
   },
   nextStep() {
+
+    if (this.data.addStatus.length !== 6) {
+      wx.showToast({
+        title: '请选择6种不喜欢的颜色',
+        icon: 'none'
+      })
+      return;
+    }
     wx.navigateTo({
       url: '../wuxing2/wuxing2',
     })
+
+    // 存储全局
+    for (let val of this.data.addStatus) {
+      app.globalData.dislike.push(val.path)
+    }
   },
   choose(e) {
+
+    if (this.data.addStatus.length >= 6) {
+      return;
+    }
+
     let id = e.currentTarget.id
     let firstIndex = id.split("-")[0] - 1;
     let secondIndex = id.split("-")[1] - 1;
 
     let cloneChoose = this.data.addStatus;
-    cloneChoose.push(this.data.colors[firstIndex][secondIndex])
-
-    if (this.data.addStatus.length == 6) {
-      return;
-    }
+    cloneChoose.indexOf(this.data.colors[firstIndex][secondIndex]) == '-1' ? cloneChoose.push(this.data.colors[firstIndex][secondIndex]) : '';
 
     this.setData({
       addStatus: cloneChoose
     })
 
-    console.log(this.data.addStatus)
   },
   cancel(e) {
     let id = e.currentTarget.id;
     let cloneChoose = this.data.addStatus;
     for (let index in cloneChoose) {
       if (cloneChoose[index].name == id) {
-        console.log(index)
+        cloneChoose.splice(index, 1)
       }
     }
+    this.setData({
+      addStatus: cloneChoose
+    })
   }
 
 })

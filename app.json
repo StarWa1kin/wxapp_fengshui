@@ -8,7 +8,9 @@
     "pages/fs-result/fs-result",
     "pages/more/more",
     "pages/wuxing/wuxing",
-    "pages/wuxing2/wuxing2"
+    "pages/wuxing2/wuxing2",
+    "pages/wuxingRes/wuxingRes"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",

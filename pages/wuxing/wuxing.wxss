@@ -34,12 +34,16 @@ page {
   color: white;
 }
 
-.showArea image{
+.showArea {
+  width: 600rpx;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.showArea image {
   width: 100rpx;
   height: 100rpx;
 }
-
-
 
 .container2 {
   display: flex;
@@ -54,9 +58,6 @@ page {
   display: flex;
   flex-wrap: wrap;
   padding: 30rpx 0;
-}
-
-.imgContainer {
 }
 
 .img {
