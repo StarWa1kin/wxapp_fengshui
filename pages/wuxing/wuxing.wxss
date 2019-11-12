@@ -4,6 +4,7 @@ page {
 
 .yourDislike {
   text-align: center;
+  padding-top: 20rpx;
 }
 
 .spec {
@@ -58,6 +59,10 @@ page {
   display: flex;
   flex-wrap: wrap;
   padding: 30rpx 0;
+}
+.imgContainer {
+  width: 100rpx;
+  height: 100rpx;
 }
 
 .img {

@@ -28,8 +28,8 @@
 
 <view class='container2'>
   <view class="group" wx:for='{{colors}}' wx:key="{{item}}">
-    <view class="imgContainer" wx:for='{{item}}' wx:key="{{sub}}" wx:for-item="sub" bindtap="choose" id="{{sub.name}}">
-      <image class="img" src="{{sub.path}}"></image>
+    <view class="imgContainer" wx:for='{{item}}' wx:key="{{sub}}" wx:for-item="sub" bindtap="choose" id="{{sub.name}}" data-hidden="{{sub.hidden}}">
+      <image class="img" src="{{sub.path}}" hidden='{{sub.hidden}}'></image>
     </view>
   </view>
 </view>

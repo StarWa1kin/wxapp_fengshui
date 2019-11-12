@@ -25,7 +25,6 @@ const sendRequest = (config) => {
       method: _config.method,
       data: _config.data,
       success(res) {
-        // debugger
         if (res.data.result == "0000") {
           resolve(res.data.data)
         }

@@ -69,7 +69,7 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function() {
-    debugger
+    // debugger
   },
   getFS() {
     console.log(this.data.param)

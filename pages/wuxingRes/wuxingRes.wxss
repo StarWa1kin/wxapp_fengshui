@@ -10,6 +10,7 @@ page {
   position: relative;
   text-align: center;
   top: 50%;
+  height: 660rpx;
   transform: translate(0, -330rpx);
 }
 
@@ -22,11 +23,11 @@ page {
 
 .c {
   position: absolute;
-  /* background: white; */
   width: 40rpx;
   height: 40rpx;
   left: 0;
   top: 0;
+  z-index: 100;
 }
 
 .c image {
@@ -62,4 +63,162 @@ page {
 .dislike6 {
   left: calc(50% - 70rpx);
   top: calc(50% - 62rpx);
+}
+
+.y {
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.y image {
+  width: 100%;
+  height: 100%;
+}
+
+.like1 {
+  left: calc(50% - 14rpx);
+  top: 60rpx;
+}
+
+.like2 {
+  left: calc(50% - 33rpx);
+  top: 90rpx;
+}
+
+.like3 {
+  left: calc(50% + 5rpx);
+  top: 90rpx;
+}
+
+.like4 {
+  left: calc(50% - 40rpx);
+  top: 120rpx;
+}
+
+.like5 {
+  left: calc(50% - 14rpx);
+  top: 120rpx;
+}
+
+.like6 {
+  left: calc(50% + 12rpx);
+  top: 120rpx;
+}
+
+.like7 {
+  left: calc(50% - 50rpx);
+  top: 150rpx;
+}
+
+.like8 {
+  left: calc(50% - 15rpx);
+  top: 150rpx;
+}
+
+.like9 {
+  left: calc(50% + 20rpx);
+  top: 150rpx;
+}
+
+.like10 {
+  left: calc(50% - 60rpx);
+  top: 180rpx;
+}
+
+.like11 {
+  left: calc(50% - 30rpx);
+  top: 180rpx;
+}
+
+.like12 {
+  left: calc(50%);
+  top: 180rpx;
+}
+
+.like13 {
+  left: calc(50% + 30rpx);
+  top: 180rpx;
+}
+
+.like14 {
+  left: calc(50% - 70rpx);
+  top: 210rpx;
+}
+
+.like15 {
+  left: calc(50% - 40rpx);
+  top: 210rpx;
+}
+
+.like16 {
+  left: calc(50% - 10rpx);
+  top: 210rpx;
+}
+
+.like17 {
+  left: calc(50% + 20rpx);
+  top: 210rpx;
+}
+
+.like18 {
+  left: calc(50% + 50rpx);
+  top: 210rpx;
+}
+
+.mu1 {
+  left: calc(50% + 200rpx);
+  top: 240rpx;
+}
+
+.mu2 {
+  left: calc(50% + 140rpx);
+  top: 240rpx;
+}
+
+.mu3 {
+  left: calc(50% + 160rpx);
+  top: 260rpx;
+}
+
+.muBox {
+  width: 200rpx;
+  height: 240rpx;
+  position: relative;
+  z-index: 99;
+  left: 50%;
+  transform: translate(100rpx, 160rpx) rotate(72deg);
+  top: -680rpx;
+}
+
+.shuiBox {
+  width: 200rpx;
+  height: 240rpx;
+  position: relative;
+  z-index: 99;
+  left: 50%;
+  transform: translate(20rpx, 150rpx) rotate(144deg);
+  top: -680rpx;
+}
+
+.huoBox {
+  width: 200rpx;
+  height: 240rpx;
+  position: relative;
+  z-index: 99;
+  left: 50%;
+  transform: translate(-220rpx, -80rpx) rotate(216deg);
+  top: -680rpx;
+}
+
+.tuBox {
+  width: 200rpx;
+  height: 240rpx;
+  position: relative;
+  z-index: 99;
+  left: 50%;
+  transform: translate(-300rpx, -560rpx) rotate(288deg);
+  top: -680rpx;
 }

@@ -1,4 +1,12 @@
 // pages/wuxingRes/wuxingRes.js
+// 规则
+// 1 2土元素
+// 3 4金元素
+// 5 6木元素
+// 7 8水元素
+// 9 19 火元素
+
+
 let app = getApp();
 Page({
 
@@ -7,7 +15,7 @@ Page({
    */
   data: {
     dislike: [],
-    like: []
+    like: null,
   },
 
   /**
@@ -19,6 +27,7 @@ Page({
 
     this.setData({
       dislike: dislike,
+      like: like
     })
   },
 
@@ -26,7 +35,10 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    // wx.showTabBar({
+    //   fail: function (res) {
+    //   }
+    // })
   },
 
   /**

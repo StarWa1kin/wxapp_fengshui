@@ -4,27 +4,131 @@
 
   <!-- dislike -->
   <view class="dislike1 c">
-    <image src="{{dislike[0]}}"></image>
+    <image src="{{dislike[0].path}}"></image>
   </view>
   <view class="dislike2 c">
-    <image src="{{dislike[1]}}"></image>
+    <image src="{{dislike[1].path}}"></image>
   </view>
   <view class="dislike3 c">
-    <image src="{{dislike[2]}}"></image>
+    <image src="{{dislike[2].path}}"></image>
   </view>
   <view class="dislike4 c">
-    <image src="{{dislike[3]}}"></image>
+    <image src="{{dislike[3].path}}"></image>
   </view>
   <view class="dislike5 c">
-    <image src="{{dislike[4]}}"></image>
+    <image src="{{dislike[4].path}}"></image>
   </view>
   <view class="dislike6 c">
-    <image src="{{dislike[5]}}"></image>
+    <image src="{{dislike[5].path}}"></image>
   </view>
 
 
   <!-- like -->
 
+  <!-- 金 -->
 
+  <view class="jinBox">
+    <view class="like1 y jin">
+      <image src="{{like.jin[0]}}"></image>
+
+    </view>
+    <view class="like2 y jin">
+      <image src="{{like.jin[1]}}"></image>
+    </view>
+
+    <view class="like3 y jin">
+      <image src="{{like.jin[2]}}"></image>
+    </view>
+
+    <view class="like4 y jin">
+      <image src="{{like.jin[3]}}"></image>
+    </view>
+
+    <view class="like5 y jin">
+      <image src="{{like.jin[4]}}"></image>
+
+    </view>
+
+    <view class="like6 y jin">
+      <image src="{{like.jin[5]}}"></image>
+
+    </view>
+
+    <view class="like7 y jin">
+      <image src="{{like.jin[6]}}"></image>
+    </view>
+
+    <view class="like8 y jin">
+      <image src="{{like.jin[7]}}"></image>
+    </view>
+
+    <view class="like9 y jin">
+      <image src="{{like.jin[8]}}"></image>
+    </view>
+
+    <view class="like10 y jin">
+      <image src="{{like.jin[9]}}"></image>
+    </view>
+
+    <view class="like11 y jin">
+      <image src="{{like.jin[10]}}"></image>
+    </view>
+
+    <view class="like12 y jin">
+      <image src="{{like.jin[11]}}"></image>
+    </view>
+
+    <view class="like13 y jin">
+      <image src="{{like.jin[12]}}"></image>
+    </view>
+
+    <view class="like14 y jin">
+      <image src="{{like.jin[13]}}"></image>
+    </view>
+    <view class="like15 y jin">
+      <image src="{{like.jin[14]}}"></image>
+    </view>
+    <view class="like16 y jin">
+      <image src="{{like.jin[15]}}"></image>
+    </view>
+    <view class="like17 y jin">
+      <image src="{{like.jin[16]}}"></image>
+    </view>
+    <view class="like18 y jin">
+      <image src="{{like.jin[17]}}"></image>
+    </view>
+
+  </view>
+
+
+
+  <view class="muBox">
+    <view wx:for="{{like.mu}}" wx:key="{{index}}" class=" 'like{{index+1}}' y jin">
+      <image src="{{item}}"></image>
+    </view>
+  </view>
+
+
+
+  <view class="shuiBox">
+    <view wx:for="{{like.shui}}" wx:key="{{index}}" class=" 'like{{index+1}}' y jin">
+      <image src="{{item}}"></image>
+    </view>
+  </view>
+
+
+  <view class="huoBox">
+    <view wx:for="{{like.huo}}" wx:key="{{index}}" class=" 'like{{index+1}}' y jin">
+      <image src="{{item}}"></image>
+    </view>
+  </view>
+
+
+
+  <view class="tuBox">
+    <view wx:for="{{like.tu}}" wx:key="{{index}}" class=" 'like{{index+1}}' y jin">
+      <image src="{{item}}"></image>
+    </view>
+  </view>
 
 </view>

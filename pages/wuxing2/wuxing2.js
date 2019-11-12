@@ -514,7 +514,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    this.hideDislike()
   },
 
   /**
@@ -577,13 +577,14 @@ Page({
     wx.navigateTo({
       url: '../wuxingRes/wuxingRes',
     })
-    // 存储全局
-    for (let val of this.data.addStatus) {
-      app.globalData.like.push(val.path)
-    }
+
+    this.packageData()
+
   },
   choose(e) {
-    if (this.data.addStatus.length >= 25) {
+    //隐藏的不可 点击
+    //超过也不可 点击
+    if (this.data.addStatus.length >= 25 || e.currentTarget.dataset.hidden) {
       return;
     }
 
@@ -592,10 +593,16 @@ Page({
     let secondIndex = id.split("-")[1] - 1;
 
     let cloneChoose = this.data.addStatus;
-    cloneChoose.indexOf(this.data.colors[firstIndex][secondIndex]) == '-1' ? cloneChoose.push(this.data.colors[firstIndex][secondIndex]) : '';
-
+    let cloneColors = this.data.colors;
+    // cloneChoose.indexOf(this.data.colors[firstIndex][secondIndex]) == '-1' ? cloneChoose.push(this.data.colors[firstIndex][secondIndex]) : '';
+    if (cloneChoose.indexOf(this.data.colors[firstIndex][secondIndex]) == '-1') {
+      // 加属性 加显示列表
+      cloneColors[firstIndex][secondIndex].hidden = true;
+      cloneChoose.push(cloneColors[firstIndex][secondIndex]);
+    }
     this.setData({
-      addStatus: cloneChoose
+      addStatus: cloneChoose,
+      colors:cloneColors
     })
 
   },
@@ -609,6 +616,69 @@ Page({
     }
     this.setData({
       addStatus: cloneChoose
+    })
+
+    this.clearHidden(id);
+  },
+  packageData() {
+    // 规则
+    // 1 2土元素
+    // 3 4金元素
+    // 5 6木元素
+    // 7 8水元素
+    // 9 19 火元素
+    let jin = [],
+      mu = [],
+      shui = [],
+      huo = [],
+      tu = [];
+    for (let val of this.data.addStatus) {
+
+      let state = val.name.slice(0, 1)
+      if (state == 1 || state == 2) {
+        tu.push(val.path)
+      } else if (state == 3 || state == 4) {
+        jin.push(val.path)
+      } else if (state == 5 || state == 6) {
+        mu.push(val.path)
+      } else if (state == 7 || state == 8) {
+        shui.push(val.path)
+      } else if (state == 9 || state == 10) {
+        huo.push(val.path)
+      }
+    }
+
+    app.globalData.like.jin = jin;
+    app.globalData.like.mu = mu;
+    app.globalData.like.shui = shui;
+    app.globalData.like.huo = huo;
+    app.globalData.like.tu = tu;
+  },
+
+  hideDislike() {
+    let disLike = app.globalData.dislike
+
+    let cloneData = this.data.colors
+    for (let val of disLike) {
+      let index1 = val.name.split('-')[0] - 1;
+      let index2 = val.name.split("-")[1] - 1;
+      console.log(val.name, index1, index2)
+      cloneData[index1][index2].hidden = true;
+    }
+    console.log(cloneData)
+    this.setData({
+      colors: cloneData
+    })
+
+  },
+  clearHidden(id) {
+    // hidden属性恢复
+    let index1 = id.split("-")[0] - 1;
+    let index2 = id.split("-")[1] - 1;
+    let cloneColor = this.data.colors;
+    cloneColor[index1][index2].hidden = false;
+    this.setData({
+      colors: cloneColor
     })
   }
 })

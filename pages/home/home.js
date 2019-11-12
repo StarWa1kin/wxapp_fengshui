@@ -198,7 +198,6 @@ Page({
     //   let yourName = this.data.yourName.replace(/\s+/g, ""); //去除所有空格
     //   let yourDate = this.data.date;
     //   let yourHour = this.data.dayHours[this.data.index];
-    //   // debugger
     //   wx.navigateTo({
     //     url: '../result/result',
     //   })
