@@ -15,7 +15,7 @@
 <view class='section-hot'>
   <view class='topic'>热门专题</view>
   <view class='hotBox'>
-    <view class='item1' bindtap='toWater'>
+    <view class='item1' bindtap='toWuXing'>
       <image src='../../images/hot1.png'></image>
     </view>
     <view class='item2 item' bindtap='toMore'>
