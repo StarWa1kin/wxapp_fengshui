@@ -113,7 +113,6 @@ Page({
   //     path: '/pages/detail/detail?id=' + this.data.id, //这里设定都是以"/page"开头,并拼接好传递的参数
   //     success: function (res) {
   //       // 转发成功
-  //       console.log(res);
   //       console.log("转发成功:" + JSON.stringify(res));
   //     },
   //     fail: function (res) {

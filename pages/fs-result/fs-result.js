@@ -72,7 +72,6 @@ Page({
     // debugger
   },
   getFS() {
-    console.log(this.data.param)
     http({
       apiName: '/api/getfangwei',
       method: 'post',

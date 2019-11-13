@@ -102,16 +102,16 @@
 
 
 
-  <view class="muBox">
-    <view wx:for="{{like.mu}}" wx:key="{{index}}" class=" 'like{{index+1}}' y jin">
+  <view class="shuiBox">
+    <view wx:for="{{like.shui}}" wx:key="{{index}}" class=" 'like{{index+1}}' y jin">
       <image src="{{item}}"></image>
     </view>
   </view>
 
 
 
-  <view class="shuiBox">
-    <view wx:for="{{like.shui}}" wx:key="{{index}}" class=" 'like{{index+1}}' y jin">
+  <view class="muBox">
+    <view wx:for="{{like.mu}}" wx:key="{{index}}" class=" 'like{{index+1}}' y jin">
       <image src="{{item}}"></image>
     </view>
   </view>

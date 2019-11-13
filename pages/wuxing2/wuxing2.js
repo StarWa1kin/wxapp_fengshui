@@ -626,15 +626,14 @@ Page({
     // 3 4金元素
     // 5 6木元素
     // 7 8水元素
-    // 9 19 火元素
+    // 9 10 火元素
     let jin = [],
       mu = [],
       shui = [],
       huo = [],
       tu = [];
     for (let val of this.data.addStatus) {
-
-      let state = val.name.slice(0, 1)
+      let state = val.name.split("-")[0]
       if (state == 1 || state == 2) {
         tu.push(val.path)
       } else if (state == 3 || state == 4) {
@@ -644,6 +643,7 @@ Page({
       } else if (state == 7 || state == 8) {
         shui.push(val.path)
       } else if (state == 9 || state == 10) {
+        debugger
         huo.push(val.path)
       }
     }
@@ -662,10 +662,8 @@ Page({
     for (let val of disLike) {
       let index1 = val.name.split('-')[0] - 1;
       let index2 = val.name.split("-")[1] - 1;
-      console.log(val.name, index1, index2)
       cloneData[index1][index2].hidden = true;
     }
-    console.log(cloneData)
     this.setData({
       colors: cloneData
     })

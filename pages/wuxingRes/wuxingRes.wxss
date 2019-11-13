@@ -183,7 +183,9 @@ page {
   top: 260rpx;
 }
 
-.muBox {
+/* origin mu 2019.11.3 */
+
+.shuiBox {
   width: 200rpx;
   height: 240rpx;
   position: relative;
@@ -193,7 +195,9 @@ page {
   top: -680rpx;
 }
 
-.shuiBox {
+/* origin shui */
+
+.muBox {
   width: 200rpx;
   height: 240rpx;
   position: relative;
